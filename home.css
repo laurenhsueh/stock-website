@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #151515;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(155px);
+}
+
+.gradient {
+position: absolute;
+border-radius: 100%;
+opacity: 0.3;
+mix-blend-mode: screen;
+animation-iteration-count: infinite;
+animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
+}
+
+
+.gradient-1 {
+background: rgb(36, 0, 133) none repeat scroll 0% 0% / auto padding-box border-box;
+width: 500px;
+height: 500px;
+animation-duration: 23s;
+opacity: 0.3;
+left: 60%;
+top: 40%;
+z-index: -2;
+animation-name: animation-gradient-1;
+}
+.gradient-2 {
+background: rgb(196, 242, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+width: 400px;
+height: 400px;
+animation-duration: 23s;
+opacity: 0.25;
+left: 40%;
+top: 60%;
+z-index: -1;
+animation-name: animation-gradient-2;
+}
+.gradient-3 {
+background: rgb(38, 36, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+width: 300px;
+height: 300px;
+animation-duration: 23s;
+opacity: 0.3;
+left: 50%;
+top: 50%;
+z-index: -3;
+animation-name: animation-gradient-3;
+}
+
+@keyframes animation-gradient-1 {
+0% {
+    transform: translateY(-50%) translateX(-50%) rotate(-20deg) translateX(20%);
+}
+25% {
+    transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
+    rotate(80deg) translateX(30%);
+}
+50% {
+    transform: translateY(-50%) translateX(-50%) rotate(180deg) translateX(25%);
+}
+75% {
+    transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
+    rotate(240deg) translateX(15%);
+}
+100% {
+    transform: translateY(-50%) translateX(-50%) rotate(340deg) translateX(20%);
+}
+}
+
+@keyframes animation-gradient-2 {
+0% {
+    transform: translateY(-50%) translateX(-50%) rotate(40deg) translateX(-20%);
+}
+25% {
+    transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
+    rotate(110deg) translateX(-5%);
+}
+50% {
+    transform: translateY(-50%) translateX(-50%) rotate(210deg) translateX(-35%);
+}
+75% {
+    transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
+    rotate(300deg) translateX(-10%);
+}
+100% {
+    transform: translateY(-50%) translateX(-50%) rotate(400deg) translateX(-20%);
+}
+}
+
+@keyframes animation-gradient-3 {
+0% {
+    transform: translateY(-50%) translateX(-50%) translateX(-15%)
+    translateY(10%);
+}
+20% {
+    transform: translateY(-50%) translateX(-50%) translateX(20%)
+    translateY(-30%);
+}
+40% {
+    transform: translateY(-50%) translateX(-50%) translateX(-25%)
+    translateY(-15%);
+}
+60% {
+    transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
+}
+80% {
+    transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
+}
+100% {
+    transform: translateY(-50%) translateX(-50%) translateX(-15%)
+    translateY(10%);
+}
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    color: #a6a6a6;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 2.5vh 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 0.5px solid #717171;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    height: 4vh;
+    width: auto;
+}
+
+#right {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#hero {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20vh 25vw;
+    text-align: center;
+}
+
+#hero h1 {
+    padding: 0px 5vw;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    margin-top: 40px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: white;
+}
+
+#purpose {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 15vw;
+}
+
+.purposeCard {
+    padding: 25px;
+    margin: 25px;
+    border-radius: 10px;
+    width: 270px;
+    text-align: center;
+    color: white;
+    border: 0.5px solid white;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.purposeCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+}
+
+.purposeContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#assumptions {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 10vh 10vw;
+}
+
+.assumptionCard {
+    color: white;
+    margin-bottom: 20px;
+}
