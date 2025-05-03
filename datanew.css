@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #151515;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  p {
+    color: #a6a6a6;
+    line-height: 1.5em;
+  }
+  
+  ul {
+    color: #a6a6a6;
+    line-height: 1.5em;
+  }
+  
+  .navbar {
+    background-color: #151515;
+    color: white;
+    padding: 2.5vh 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 0.5px solid #717171;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  #logo {
+    height: 5vh;
+    width: auto;
+  }
+  
+  #right {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  #containerWalk {
+    display: flex;
+    gap: 4rem;
+  }
+  .buttonWalkorExit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 2rem;
+    border: 0.5px solid white;
+    border-radius: 3rem;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+  }
+  #datatables {
+      padding: 10vh 10vw;
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th, table td {
+    padding: 12px 16px;
+    text-align: left;
+    border: 1px solid #444444;
+    font-size: 1rem;
+  }
+  
+  table th {
+    background-color: #222222;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td {
+    background-color: #1c1c1c;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #333333;
+  }
+  
+  table tr:hover {
+    background-color: #444444;
+  }
+  
+  table caption {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  table thead {
+    border-bottom: 2px solid #717171;
+  }
+  .title {
+    margin-top: 10vh;
+  }
+  .chart {
+    width: 80vw;
+  }
+  .chart-wrapper {
+    position: relative;
+    margin: 20px 0;
+    padding-bottom: 50%;
+    height: 0;
+  }
+  .chart-wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  

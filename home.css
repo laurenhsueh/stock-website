@@ -161,7 +161,7 @@ p {
 }
 
 #logo {
-    height: 4vh;
+    height: 5vh;
     width: auto;
 }
 
@@ -221,6 +221,7 @@ p {
     justify-content: flex-end;
 }
 
+
 #assumptions {
     display: flex;
     flex-direction: column;
@@ -231,4 +232,16 @@ p {
 .assumptionCard {
     color: white;
     margin-bottom: 20px;
+}
+#stonks {
+    padding: 15vh 10vw;
+}
+#stonksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+#stonksContainer img {
+    width: 35%;
 }
