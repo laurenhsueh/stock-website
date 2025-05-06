@@ -55,11 +55,17 @@ ul {
   justify-content: space-between;
   gap: 3rem;
 }
+#pagetitle {
+  text-align: center;
+}
 .chartsection {
   margin: 0px 0px 10% 0px;
 }
 #containerWalk {
+  position: relative;
+  top: -30px;
   display: flex;
+  justify-content: center;
   gap: 4rem;
 }
 
@@ -67,7 +73,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 2rem;
+  padding: 20px 30px;
   border: 0.5px solid white;
   border-radius: 3rem;
   cursor: pointer;
@@ -77,9 +83,16 @@ ul {
 .glowbutton:hover {
   box-shadow: 0 0 15px 0px rgba(255, 255, 255, 0.6);
 }
-
+.tablecontainer {
+  display: flex;
+  gap: 3%;
+}
+.visualizationcontainer {
+  display: flex;
+  gap: 1%
+}
 #datatables {
-    padding: 10vh 10vw;
+    padding: 10vh 5vw;
 }
 table {
     width: 100%;
@@ -90,7 +103,7 @@ table {
 }
 
 table th, table td {
-  padding: 12px 16px;
+  padding: 12px 8px;
   text-align: left;
   border: 1px solid #444444;
   font-size: 1rem;
@@ -119,19 +132,20 @@ table thead {
   margin-top: 10vh;
 }
 .chart-container {
-  width: 80%;
-  height: 500px;
+  width: 45vw;
+  height: 400px;
   margin: 0 auto 20px auto;
   border-radius: 8px;
+  border: 0.5px solid white;
+  box-sizing: border-box;
 }
 .charttitle {
-  padding: 20px;
-  width: 50%;
-  text-align: center;
+  width: 600px;
   margin: 2%;
 }
 .chartdescription {
-  text-align: center;
+  position: relative;
+  top: -25px;
   color: white;
   font-size: 1.2em;
   margin-bottom: 3%;
@@ -144,5 +158,17 @@ table thead {
 .datatitles {
   font-weight: normal;
   font-size: 1.2em;
+}
+.redditcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.muskcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 

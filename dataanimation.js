@@ -3,14 +3,17 @@ $(document).ready(function() {
     $("#nextButtons").hide();
     $("#exit").hide();
 
-    $(".dstep").each(function () {
+    $(".visualizationcontainer").each(function () {
         $(this).children().not(".charttitle").hide();
+        $(this).siblings(".dinsight").hide(); // Hide insight too
     });
-
+    
     $(".charttitle").click(function () {
-        const container = $(this).parent();
-        container.children().not(this).fadeToggle();
+        const container = $(this).siblings(".visualizationcontainer");
+        container.find(".redditcontainer, .muskcontainer").fadeToggle();
+        container.siblings(".dinsight").fadeToggle();
     });
+    
     // General step transition function
     function showStep(hideIds, showIds) {
         $(hideIds).fadeOut(500, function() {
@@ -19,8 +22,8 @@ $(document).ready(function() {
     }
 
     $("#walkthrough").on("click", function() {
-        $("#frWalkthrough").show();
-        $("#frDatatables").hide();
+        $("#frWalkthrough").fadeToggle();
+        $("#frDatatables").fadeToggle();
         $("#walkthrough").hide();
         $("#exit").show();
         $("#nextButtons").show();
@@ -29,9 +32,9 @@ $(document).ready(function() {
     });
 
     $("#exit").on("click", function() {
-        $("#frWalkthrough").hide();
+        $("#frWalkthrough").fadeToggle();
         $("#frWalkthrough > *").hide();
-        $("#frDatatables").show();
+        $("#frDatatables").fadeToggle();
         $("#exit").hide();
         $("#walkthrough").show();
         $("#nextButtons").hide();
