@@ -134,7 +134,7 @@ table thead {
 .chart-container {
   width: 45vw;
   height: 400px;
-  margin: 0 auto 20px auto;
+  margin: 30px 0px 0px 0px;
   border-radius: 8px;
   border: 0.5px solid white;
   box-sizing: border-box;
@@ -164,11 +164,13 @@ table thead {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: white;
 }
 .muskcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: white;
 }
 

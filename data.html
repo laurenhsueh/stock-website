@@ -241,6 +241,18 @@
                             <div class="redditcontainer">
                                 <h3>Sentiment Components Analysis Chart (Reddit)</h3>
                                 <p class="chartdescription">Daily distribution of positive, neutral, and negative sentiment components from r/wallstreetbets.</p>
+                                <div class="chart-controls">
+                                    <div class="slider-container">
+                                        <label for="sentiment-date-range-start">Start Date:</label>
+                                        <input type="range" id="sentiment-date-range-start" min="0" max="0" value="0" step="1">
+                                        <span id="sentiment-date-range-start-label"></span>
+                                    </div>
+                                    <div class="slider-container">
+                                        <label for="sentiment-date-range-end">End Date:</label>
+                                        <input type="range" id="sentiment-date-range-end" min="0" max="0" value="0" step="1">
+                                        <span id="sentiment-date-range-end-label"></span>
+                                    </div>
+                                </div>
                                 <div class="chart-container"><canvas id="sentimentComponentsChartReddit"></canvas></div>
                             </div>
                     
@@ -248,6 +260,18 @@
                             <div class="muskcontainer">
                                 <h3>Sentiment Components Analysis Chart (Musk)</h3>
                                 <p class="chartdescription">Daily distribution of positive, neutral, and negative sentiment components from Musk's tweets.</p>
+                                <div class="chart-controls">
+                                    <div class="slider-container">
+                                        <label for="sentiment-date-range-start-musk">Start Date:</label>
+                                        <input type="range" id="sentiment-date-range-start-musk" min="0" max="0" value="0" step="1">
+                                        <span id="sentiment-date-range-start-label-musk"></span>
+                                    </div>
+                                    <div class="slider-container">
+                                        <label for="sentiment-date-range-end-musk">End Date:</label>
+                                        <input type="range" id="sentiment-date-range-end-musk" min="0" max="0" value="0" step="1">
+                                        <span id="sentiment-date-range-end-label-musk"></span>
+                                    </div>
+                                </div>
                                 <div class="chart-container"><canvas id="sentimentComponentsChartMusk"></canvas></div>
                             </div>
                         </div>
@@ -275,6 +299,11 @@
                             <div class="redditcontainer">
                                 <h3>Extreme Sentiment Days Analysis Chart (Reddit)</h3>
                                 <p class="chartdescription">Analysis of days with the most extreme sentiment values in r/wallstreetbets.</p>
+                                <div class="chart-controls">
+                                    <label for="extreme-min-posts">Min Post Count:</label>
+                                    <input type="range" id="extreme-min-posts" min="1" max="100" value="1" step="1">
+                                    <span id="extreme-min-posts-label">1</span>
+                                </div>
                                 <div class="chart-container"><canvas id="extremeSentimentChartReddit"></canvas></div>
                             </div>
                     
@@ -282,6 +311,11 @@
                             <div class="muskcontainer">
                                 <h3>Extreme Sentiment Days Analysis Chart (Musk)</h3>
                                 <p class="chartdescription">Analysis of days with the most extreme sentiment values in Musk's Tweets.</p>
+                                <div class="chart-controls">
+                                    <label for="extreme-min-posts-musk">Min Post Count:</label>
+                                    <input type="range" id="extreme-min-posts-musk" min="1" max="100" value="1" step="1">
+                                    <span id="extreme-min-posts-label-musk">1</span>
+                                </div>
                                 <div class="chart-container"><canvas id="extremeSentimentChartMusk"></canvas></div>
                             </div>
                         </div>
@@ -297,7 +331,7 @@
                             &nbsp;&nbsp;&nbsp;→ More consistent correlation here: very negative days often precede losses
                         </p>
                     </div>
-                    
+                
                     
                     <div id="wkdata3" class="dstep">
                         <h3 class="charttitle glowbutton">Sentiment Strength vs. Price Volatility Chart&nbsp;&nbsp;&darr;</h3>
@@ -306,6 +340,11 @@
                             <div class="redditcontainer">
                                 <h3>Sentiment Strength vs. Price Volatility Chart (Reddit)</h3>
                                 <p class="chartdescription">Relationship between the strength of sentiment and the volatility of Tesla’s stock price.</p>
+                                <div class="chart-controls">
+                                    <label for="min-sentiment-strength">Min Sentiment Strength:</label>
+                                    <input type="range" id="min-sentiment-strength" min="0" max="1" value="0" step="0.01">
+                                    <span id="min-sentiment-strength-label">0.00</span>
+                                </div>
                                 <div class="chart-container"><canvas id="sentimentVolatilityChartReddit"></canvas></div>
                             </div>
                     
@@ -313,6 +352,11 @@
                             <div class="muskcontainer">
                                 <h3>Sentiment Strength vs. Price Volatility Chart (Musk)</h3>
                                 <p class="chartdescription">Relationship between the strength of sentiment and the volatility of Tesla’s stock price.</p>
+                                <div class="chart-controls">
+                                    <label for="min-sentiment-strength-musk">Min Sentiment Strength:</label>
+                                    <input type="range" id="min-sentiment-strength-musk" min="0" max="1" value="0" step="0.01">
+                                    <span id="min-sentiment-strength-label-musk">0.00</span>
+                                </div>
                                 <div class="chart-container"><canvas id="sentimentVolatilityChartMusk"></canvas></div>
                             </div>
                         </div>
@@ -326,7 +370,7 @@
                     <h3>2. Price Impact Analysis</h3> 
 
                     <!-- Price Impact Data Table -->
-                     <div class="tablecontainer">
+                    <div class="tablecontainer">
                         
                         <div class="data-table-reddit">
                             <h3 class="datatitles">Price Impact Data &#40;Reddit&#41;</h3>
@@ -522,15 +566,27 @@
                                                     </tbody>
                             </table>
                         </div>
-                     </div>
-
-                     <div id="wkdata4" class="dstep">
+                    </div>
+                    
+                    <div id="wkdata4" class="dstep">
                         <h3 class="charttitle glowbutton">Price vs Sentiment Correlation Chart&nbsp;&nbsp;&darr;</h3>
                         <div class="visualizationcontainer">
                             <!-- Reddit Visualization -->
                             <div class="redditcontainer">
                                 <h3>Price vs Sentiment Correlation Chart (Reddit)</h3>
                                 <p class="chartdescription">Correlation between sentiment and price movements from r/wallstreetbets.</p>
+                                <div class="chart-controls">
+                                    <div class="slider-container">
+                                        <label for="price-corr-date-range-start">Start Date:</label>
+                                        <input type="range" id="price-corr-date-range-start" min="0" max="0" value="0" step="1">
+                                        <span id="price-corr-date-range-start-label"></span>
+                                    </div>
+                                    <div class="slider-container">
+                                        <label for="price-corr-date-range-end">End Date:</label>
+                                        <input type="range" id="price-corr-date-range-end" min="0" max="0" value="0" step="1">
+                                        <span id="price-corr-date-range-end-label"></span>
+                                    </div>
+                                </div>
                                 <div class="chart-container"><canvas id="priceSentimentCorrelationChartReddit"></canvas></div>
                             </div>
                     
@@ -538,6 +594,17 @@
                             <div class="muskcontainer">
                                 <h3>Price vs Sentiment Correlation Chart (Musk)</h3>
                                 <p class="chartdescription">Correlation between sentiment and price movements from Musk's tweets.</p>
+                                <div class="chart-controls">
+                                    <div class="slider-container">
+                                        <label for="price-corr-date-range-start-musk">Start Date:</label>
+                                        <input type="range" id="price-corr-date-range-start-musk" min="0" max="0" value="0" step="1">
+                                        <span id="price-corr-date-range-start-label-musk"></span>
+                                    </div>
+                                    <div class="slider-container">
+                                        <label for="price-corr-date-range-end-musk">End Date:</label>
+                                        <input type="range" id="price-corr-date-range-end-musk" min="0" max="0" value="0" step="1">
+                                        <span id="price-corr-date-range-end-label-musk"></span>
+                                    </div>
                                 <div class="chart-container"><canvas id="priceSentimentCorrelationChartMusk"></canvas></div>
                             </div>
                         </div>
@@ -590,6 +657,18 @@
                             <div class="redditcontainer">
                                 <h3>Sentiment Lag Analysis Chart (Reddit)</h3>
                                 <p class="chartdescription">Analysis of delayed price reactions to sentiment changes from Reddit.</p>
+                                <div class="chart-controls">
+                                    <div class="slider-container">
+                                        <label for="lag-date-range-start">Start Date:</label>
+                                        <input type="range" id="lag-date-range-start" min="0" max="0" value="0" step="1">
+                                        <span id="lag-date-range-start-label"></span>
+                                    </div>
+                                    <div class="slider-container">
+                                        <label for="lag-date-range-end">End Date:</label>
+                                        <input type="range" id="lag-date-range-end" min="0" max="0" value="0" step="1">
+                                        <span id="lag-date-range-end-label"></span>
+                                    </div>
+                                </div>
                                 <div class="chart-container"><canvas id="sentimentLagChartReddit"></canvas></div>
                             </div>
                     
@@ -597,6 +676,18 @@
                             <div class="muskcontainer">
                                 <h3>Sentiment Lag Analysis Chart (Musk)</h3>
                                 <p class="chartdescription">Analysis of delayed price reactions to sentiment changes from Musk.</p>
+                                <div class="chart-controls">
+                                    <div class="slider-container">
+                                        <label for="lag-date-range-start-musk">Start Date:</label>
+                                        <input type="range" id="lag-date-range-start-musk" min="0" max="0" value="0" step="1">
+                                        <span id="lag-date-range-start-label-musk"></span>
+                                    </div>
+                                    <div class="slider-container">
+                                        <label for="lag-date-range-end-musk">End Date:</label>
+                                        <input type="range" id="lag-date-range-end-musk" min="0" max="0" value="0" step="1">
+                                        <span id="lag-date-range-end-label-musk"></span>
+                                    </div>
+                                </div>
                                 <div class="chart-container"><canvas id="sentimentLagChartMusk"></canvas></div>
                             </div>
                         </div>
