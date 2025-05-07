@@ -16,29 +16,34 @@ $(document).ready(function() {
     
     // General step transition function
     function showStep(hideIds, showIds) {
-        $(hideIds).fadeOut(500, function() {
+        $(hideIds).fadeOut(500, function () {
             $(showIds).css("opacity", 0).show().animate({ "opacity": 1 }, 500);
         });
-    }
+    }    
 
     $("#walkthrough").on("click", function() {
-        $("#frWalkthrough").fadeToggle();
-        $("#frDatatables").fadeToggle();
+        $("#frWalkthrough").fadeIn();
+        $("#frWalkthrough > *").hide();
+
+        $(".chartsection").children().not(".dstep").hide();
+        $("#wkdata1, #wkdata2, #wkdata3, #wkdata4, #wkdata5, #wkdata6, #wkdata7, #wkdata8, #wkdata9").hide();
+
         $("#walkthrough").hide();
         $("#exit").show();
         $("#nextButtons").show();
-        $("#frWalkthrough > *").hide();
+
         $("#wkdesc1, #wkdata1").css("opacity", 1).show();
     });
 
     $("#exit").on("click", function() {
-        $("#frWalkthrough").fadeToggle();
+        $("#frWalkthrough").fadeOut();
         $("#frWalkthrough > *").hide();
-        $("#frDatatables").fadeToggle();
+
+        $(".chartsection").children().show();
+
         $("#exit").hide();
         $("#walkthrough").show();
         $("#nextButtons").hide();
-        $("#wkdata1, #wkdata2, #wkdata3, #wkdata4, #wkdata5, #wkdata6").show();
     });
 
     // Step transitions
