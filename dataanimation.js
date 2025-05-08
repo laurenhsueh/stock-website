@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $("#frWalkthrough").hide();
     $("#nextButtons").hide();
     $("#exit").hide();
@@ -66,4 +67,25 @@ $(document).ready(function() {
     $("#step5next").on("click", function() {
         showStep("#wkdesc5, #wkdata5", "#wkdesc6, #wkdata6");
     });
+
+    const hash = window.location.hash;
+
+    // Trigger walkthrough mode if hash targets a walkthrough section (From home core data assertions)
+    if (hash && $(hash).hasClass("dstep")) {
+        // Trigger walkthrough setup
+        $("#frWalkthrough").show();
+        $("#frWalkthrough > *").hide();
+        $(".chartsection").children().not(".dstep").hide();
+        $(".dstep, .wstep").hide();
+
+        $(hash).show().css("opacity", 1);
+
+        const descId = hash.replace("wkdata", "wkdesc");
+        $(descId).show().css("opacity", 1);
+
+        // Update controls
+        $("#walkthrough").hide();
+        $("#exit").show();
+        $("#nextButtons").show();
+    }
 });

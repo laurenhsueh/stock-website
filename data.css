@@ -25,6 +25,10 @@ ul {
   line-height: 1.5em;
 }
 
+a {
+  color: #725AFF;
+}
+
 .navbar {
   background-color: #151515;
   color: white;

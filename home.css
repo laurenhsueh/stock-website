@@ -133,10 +133,24 @@ h1 {
 
 h3 {
     font-size: 1.5em;
+    color: white;
 }
 
 p {
     color: #a6a6a6;
+}
+
+h4 {
+    font-size: 1em;
+    color: #a6a6a6;
+}
+
+a {
+    color: #725AFF;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .navbar {
@@ -244,4 +258,16 @@ p {
 }
 #stonksContainer img {
     width: 35%;
+}
+
+#core {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 10vh 10vw;
+}
+
+.assertionCard {
+    color: white;
+    margin-bottom: 20px;
 }
