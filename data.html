@@ -28,7 +28,7 @@
             <h1 id="pagetitle">Reddit and Musk on Tesla Stocks</h1>
             <div id="containerWalk">
                 <h3 id="walkthrough" class="glowbutton">Walk me through&nbsp; &#x2794;</h3>
-                <h3 id="exit" class="glowbutton">Exit&nbsp; &#x2794;</h3>
+                <h3 id="exit" class="glowbutton">Exit</h3>
             </div>
             
             <div id="frDatatables">
@@ -374,10 +374,8 @@
                 <!-- 2. Price Impact Analysis Section -->
                 <section class="chartsection">
                     <h3>2. Price Impact Analysis</h3> 
-
                     <!-- Price Impact Data Table -->
                     <div class="tablecontainer">
-                        
                         <div class="data-table-reddit">
                             <h3 class="datatitles">Price Impact Data &#40;Reddit&#41;</h3>
                             <table>
@@ -573,7 +571,6 @@
                             </table>
                         </div>
                     </div>
-                    
                     <div id="wkdata4" class="dstep">
                         <h3 class="charttitle glowbutton">Price vs Sentiment Correlation Chart&nbsp;&nbsp;&darr;</h3>
                         <div class="visualizationcontainer">
@@ -980,55 +977,183 @@
 
             <div id="frWalkthrough">
                 <div id="wkdesc1" class="wstep">
-                    <p>Let’s see which stocks are being talked about the most</p>
-                    <h3 id="step1next" class="button">Next</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>A. Reddit - Sentiment Components Analysis</h3>
+                          <p><strong>What it shows:</strong> Daily distribution of positive, neutral, and negative sentiment in Reddit posts, with Tesla’s closing price overlaid.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Date Range Sliders: Zoom in on key events.</p>
+                          <p>- Legend Click: Toggle sentiment or price visibility.</p>
+                          <p>- Tooltip: Shows daily sentiment % and Tesla price.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3>A. Musk Tweets - Sentiment Components Analysis</h3>
+                          <p><strong>What it shows:</strong> Daily distribution of sentiment in Musk’s tweets, with Tesla’s closing price overlaid.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Date Range Sliders: Zoom in on key events.</p>
+                          <p>- Legend Click: Toggle sentiment or price visibility.</p>
+                          <p>- Tooltip: Shows daily sentiment % and Tesla price.</p>
+                        </div>
+                      </div>
+                    <h3 id="step1next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc2" class="wstep">
-                    <p>It seems like Tesla, .... and ... are being talked about. We will choose Tesla.</p>
-                    <h3 id="step2prev" class="button">Previous</h3>
-                    <h3 id="step2next" class="button">Next</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>B. Reddit - Extreme Sentiment Days Analysis</h3>
+                          <p><strong>What it shows:</strong> Relationship between extreme Reddit sentiment and next day price change (scatter plot).</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Min Post Count Slider: Filter by post volume.</p>
+                          <p>- Tooltip: Date, sentiment, price change, post count.</p>
+                          <p>- Legend Click: Toggle sentiment layers.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3>B. Musk Tweets - Extreme Sentiment Days Analysis</h3>
+                          <p><strong>What it shows:</strong> Relationship between extreme tweet sentiment and next day price change.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Min Tweet Count Slider: Filter by tweet volume.</p>
+                          <p>- Tooltip: Date, sentiment, price change, tweet count.</p>
+                          <p>- Legend Click: Toggle sentiment layers.</p>
+                        </div>
+                    </div>
+                    <h3 id="step2prev" class="glowbutton">Previous</h3>
+                    <h3 id="step2next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc3" class="wstep">
-                    <p>Did the trading activity of Tesla increase with an increase of comments? It seems yes!</p>
-                    <h3 id="step3prev" class="button">Previous</h3>
-                    <h3 id="step3next" class="button">Next</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>C. Reddit - Sentiment Strength vs Price Volatility</h3>
+                          <p><strong>What it shows:</strong> Sentiment strength vs Tesla’s daily price range.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Min Sentiment Strength Slider: Filter weak sentiment days.</p>
+                          <p>- Tooltip: Date, sentiment strength, price range.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3>C. Musk Tweets - Sentiment Strength vs Price Volatility</h3>
+                          <p><strong>What it shows:</strong> Sentiment strength vs Tesla’s daily price range.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Min Sentiment Strength Slider: Filter weak sentiment days.</p>
+                          <p>- Tooltip: Date, sentiment strength, price range.</p>
+                        </div>
+                    </div>
+                    <h3 id="step3prev" class="glowbutton">Previous</h3>
+                    <h3 id="step3next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc4" class="wstep">
-                    <p>Looking at the sentiment of these comments, % is positive, % is negative, and % is neutral. See how Tesla’s stock fluctuates with sentiment.</p>
-                    <h3 id="step4prev" class="button">Previous</h3>
-                    <h3 id="step4next" class="button">Next</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>D. Reddit - Price vs Sentiment Correlation</h3>
+                          <p><strong>What it shows:</strong> Line chart of Tesla price vs Reddit sentiment over time.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Date Range Sliders: Select time range.</p>
+                          <p>- Legend Click: Toggle price/sentiment line.</p>
+                          <p>- Tooltip: Daily values shown.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3>D. Musk Tweets - Price vs Sentiment Correlation</h3>
+                          <p><strong>What it shows:</strong> Tesla price vs Musk sentiment over time.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Date Range Sliders: Select time range.</p>
+                          <p>- Legend Click: Toggle price/sentiment line.</p>
+                          <p>- Tooltip: Daily values shown.</p>
+                        </div>
+                    </div>
+                    <h3 id="step4prev" class="glowbutton">Previous</h3>
+                    <h3 id="step4next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc5" class="wstep">
                     <p>Let’s take a closer look at the impact positive sentiments make on Tesla’s prices. We see at this point both the sentiment and price are high. What happened at this point? Looking at the comments...</p>
-                    <h3 id="step5prev" class="button">Previous</h3>
-                    <h3 id="step5next" class="button">Next</h3>
+                    <h3 id="step5prev" class="glowbutton">Previous</h3>
+                    <h3 id="step5next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc6" class="wstep">
-                    <p>As a result, the volatility of the market increased. Our conclusion is that media indeed has an influence on short-term volatility of stock markets.</p>
-                    <h3 id="step6prev" class="button">Previous</h3>
-                    <h3 id="step6next" class="button">Next</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>E. Reddit - Sentiment Lag Analysis</h3>
+                          <p><strong>What it shows:</strong> Line chart comparing Reddit sentiment and price over time, exploring lag effects.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Date Range Sliders: Zoom into key periods.</p>
+                          <p>- Legend Click: Toggle lines.</p>
+                          <p>- Tooltip: Shows sentiment and price per date.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3>E. Musk Tweets - Sentiment Lag Analysis</h3>
+                          <p><strong>What it shows:</strong> Line chart comparing tweet sentiment and price over time with lags.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Date Range Sliders: Zoom into key periods.</p>
+                          <p>- Legend Click: Toggle lines.</p>
+                          <p>- Tooltip: Shows sentiment and price per date.</p>
+                        </div>
+                    </div>
+                    <h3 id="step6prev" class="glowbutton">Previous</h3>
+                    <h3 id="step6next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc7" class="wstep">
-                    <p>Now let’s examine a different company to validate our hypothesis further.</p>
-                    <h3 id="step7prev" class="button">Previous</h3>
-                    <h3 id="step7next" class="button">Next</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>F. Reddit - Trading Volume vs Reddit Comments (Extreme Days)</h3>
+                          <p><strong>What it shows:</strong> Bar/line chart comparing volume and comment activity for top 40 extreme days.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Tooltip: Volume and comment count per day.</p>
+                          <p>- Legend Click: Toggle volume/comment series.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3>F. Musk Tweets - Trading Volume vs Tweet Activity (Extreme Days)</h3>
+                          <p><strong>What it shows:</strong> Bar/line chart comparing trading volume and tweet count on sentiment peak days.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Tooltip: Volume and tweet count per day.</p>
+                          <p>- Legend Click: Toggle volume/tweet series.</p>
+                        </div>
+                    </div>                    
+                    <h3 id="step7prev" class="glowbutton">Previous</h3>
+                    <h3 id="step7next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc8" class="wstep">
-                    <p>We see a similar pattern emerge with this stock: sentiment shifts correlate with trading volume changes.</p>
-                    <h3 id="step8prev" class="button">Previous</h3>
-                    <h3 id="step8next" class="button">Next</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>Reddit - Volume vs Extreme Daily Sentiment</h3>
+                          <p><strong>What it shows:</strong> Bar/line chart of volume vs highest absolute sentiment per day.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Tooltip: Daily volume and extreme sentiment.</p>
+                          <p>- Legend Click: Toggle visibility.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3> Musk Tweets - Volume vs Extreme Daily Sentiment</h3>
+                          <p><strong>What it shows:</strong> Bar/line chart of volume vs tweet sentiment extremes.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Tooltip: Daily volume and sentiment score.</p>
+                          <p>- Legend Click: Toggle visibility.</p>
+                        </div>
+                    </div>
+                    <h3 id="step8prev" class="glowbutton">Previous</h3>
+                    <h3 id="step8next" class="glowbutton">Next</h3>
                 </div>
                 
                 <div id="wkdesc9" class="wstep">
-                    <p>Our final takeaway: social media sentiment is a powerful short-term market signal, but further study is needed for long-term effects.</p>
-                    <h3 id="step9prev" class="button">Previous</h3>
+                    <div class="dashboard-section">
+                        <div class="dashboard-card">
+                          <h3>Reddit - Volume vs Extreme Daily Sentiment</h3>
+                          <p><strong>What it shows:</strong> Bar/line chart of volume vs highest absolute sentiment per day.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Tooltip: Daily volume and extreme sentiment.</p>
+                          <p>- Legend Click: Toggle visibility.</p>
+                        </div>
+                        <div class="dashboard-card">
+                          <h3> Musk Tweets - Volume vs Extreme Daily Sentiment</h3>
+                          <p><strong>What it shows:</strong> Bar/line chart of volume vs tweet sentiment extremes.</p>
+                          <p><strong>User Interactions:</strong></p>
+                          <p>- Tooltip: Daily volume and sentiment score.</p>
+                          <p>- Legend Click: Toggle visibility.</p>
+                        </div>
+                    </div>
+                    <h3 id="step9prev" class="glowbutton">Previous</h3>
                 </div>                
             </div>
         </section>

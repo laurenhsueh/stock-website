@@ -60,17 +60,9 @@ $(document).ready(function() {
     $("#step3next").on("click", function() {
         showStep("#wkdesc3, #wkdata3", "#wkdesc4, #wkdata4");
     });
-
+    
     $("#step4next").on("click", function() {
-        showStep("#wkdesc4, #wkdata4", "#wkdesc5, #wkdata5");
-    });
-
-    $("#step5next").on("click", function() {
-        showStep("#wkdesc5, #wkdata5", "#wkdesc6, #wkdata6");
-    });
-
-    $("#step6next").on("click", function() {
-        showStep("#wkdesc6, #wkdata6", "#wkdesc7, #wkdata7");
+        showStep("#wkdesc4, #wkdata4", "#wkdesc7, #wkdata7");
     });
 
     $("#step7next").on("click", function() {
@@ -95,15 +87,7 @@ $(document).ready(function() {
     });
 
     $("#step5prev").on("click", function() {
-        showStep("#wkdesc5, #wkdata5", "#wkdesc4, #wkdata4");
-    });
-
-    $("#step6prev").on("click", function() {
-        showStep("#wkdesc6, #wkdata6", "#wkdesc5, #wkdata5");
-    });
-
-    $("#step7prev").on("click", function() {
-        showStep("#wkdesc7, #wkdata7", "#wkdesc6, #wkdata6");
+         showStep("#wkdesc7, #wkdata7", "#wkdesc4, #wkdata4");
     });
 
     $("#step8prev").on("click", function() {
